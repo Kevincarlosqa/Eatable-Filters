@@ -8,5 +8,5 @@ export const CredentialsForm = styled.form`
   align-items: center;
   max-width: 314px;
   margin: auto;
-  margin: 50px 52px 40px 52px;
+  padding: 50px 52px 40px 52px;
 `;
