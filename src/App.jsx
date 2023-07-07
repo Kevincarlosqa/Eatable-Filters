@@ -1,18 +1,9 @@
-import { Global } from "@emotion/react";
 import AnauthenticatedApp from "./AnauthenticatedApp/AnauthenticatedApp";
-import { global, reset } from "./styles/global";
-import { BrowserRouter } from "react-router-dom";
+import { useAuth } from "./context/authContext";
 
 function App() {
-  return (
-    <>
-      <BrowserRouter>
-        <Global styles={reset} />
-        <Global styles={global} />
-        <AnauthenticatedApp />
-      </BrowserRouter>
-    </>
-  );
+  const { user } = useAuth();
+  return <>{user ? <>Authenticated up</> : <AnauthenticatedApp />}</>;
 }
 
 export default App;
