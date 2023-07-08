@@ -5,7 +5,7 @@ import { colors } from "../../styles/colors";
 import logo from "../../assets/eatable.svg";
 
 const Header = styled.div`
-  height: 382px;
+  height: 360px;
   display: flex;
   flex-direction: column;
   align-items: center;

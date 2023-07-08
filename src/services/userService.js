@@ -2,7 +2,7 @@ import { tokenKey } from "../config";
 import ApiFetch from "./apiFetch";
 
 export async function createUser(userData) {
-  const { token, ...user } = await ApiFetch("/signup", {
+  const { token, ...user } = await ApiFetch("/users", {
     body: userData,
   });
 
